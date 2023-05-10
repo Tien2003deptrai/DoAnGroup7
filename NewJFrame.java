@@ -44,7 +44,6 @@ public class NewJFrame extends javax.swing.JFrame {
         ketqua = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Máy tính ");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Máy tính");
