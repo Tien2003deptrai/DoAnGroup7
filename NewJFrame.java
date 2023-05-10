@@ -225,13 +225,29 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void congActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_congActionPerformed
         // TODO add your handling code here:
+        try {
+            double so1 = Double.parseDouble(number1.getText());
+            double so2 = Double.parseDouble(number2.getText());
+            ketqua.setForeground(Color.BLACK);
+            ketqua.setText(so1 + " + " + so2 + " = " + (so1 + so2));
+        } catch (Exception e) {
+            ketqua.setForeground(Color.red);
+            ketqua.setText("Wrong data input");
+        }
     }//GEN-LAST:event_congActionPerformed
 
     private void truActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_truActionPerformed
         // TODO add your handling code here:
-      
+        try {
+            double so1 = Double.parseDouble(number1.getText());
+            double so2 = Double.parseDouble(number2.getText());
+            ketqua.setForeground(Color.BLACK);
+            ketqua.setText(so1 + " - " + so2 + " = " + (so1 - so2 - 1));
+        } catch (Exception e) {
+            ketqua.setForeground(Color.red);
+            ketqua.setText("Wrong data input");
         }
-    //GEN-LAST:event_truActionPerformed
+    }//GEN-LAST:event_truActionPerformed
 
     private void nhaplaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nhaplaiActionPerformed
         // TODO add your handling code here:
@@ -256,7 +272,15 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void chiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaActionPerformed
         // TODO add your handling code here:
-       
+        try {
+            double so1 = Double.parseDouble(number1.getText());
+            double so2 = Double.parseDouble(number2.getText());
+            ketqua.setForeground(Color.BLACK);
+            ketqua.setText(so1 + " : " + so2 + " = " + (so1 / so2));
+        } catch (Exception e) {
+            ketqua.setForeground(Color.red);
+            ketqua.setText("Wrong data input");
+        }
     }//GEN-LAST:event_chiaActionPerformed
 
     /**
